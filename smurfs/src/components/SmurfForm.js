@@ -39,7 +39,9 @@ const SmurfForm = props => {
         {props.isFetchingData ? (
           <div>Fetching Smurfs!!</div>
         ) : (
-          <button onClick={handleGetData}>Find Smurfs</button>
+          <button className="smurf-button" onClick={handleGetData}>
+            Find Smurfs
+          </button>
         )}
       </div>
       <div>
@@ -66,7 +68,9 @@ const SmurfForm = props => {
             onChange={handleAgeChanges}
             placeholder="Smurf Age"
           />
-          <button className = 'smurf-button' onClick={handleAddSmurf}>Add Smurf!</button>
+          <button className="smurf-button" onClick={handleAddSmurf}>
+            Add Smurf!
+          </button>
         </div>
       </div>
     </div>
